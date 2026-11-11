@@ -122,7 +122,7 @@
 // }
 
 
-// //exercicio 5
+// ? exercicio 5
 // Console.WriteLine("===========================");
 // Console.WriteLine("Exercicio 5: ");
 // Console.WriteLine("===========================");
@@ -142,7 +142,7 @@
 // foreach (var entrega in entregas)
 // {
 //     Console.WriteLine($"Modalidade: {entrega.GetType().Name}");
-//     Console.WriteLine($"Valor do Frete: R$ {entrega.CalcularFrete():C}");
+//     Console.WriteLine($"Valor do Frete: {entrega.CalcularFrete():C}");
 //     Console.WriteLine("===========================");
 // }
 
@@ -199,3 +199,50 @@
 //     }
 // }
 
+// ? exercicio 7
+
+// Equipamento note = new Notebook("Gamer", 4070, 16);
+// note.ExibirInformacoes();
+
+// Console.WriteLine("================");
+
+// Equipamento celular = new Smartphone("J7", 2010, 500);
+// celular.ExibirInformacoes();
+
+// ? Exercicio 8
+
+// List<Animal> animais = new List<Animal>
+// {
+//     new Cachorro("theo"),
+//     new Gato("gatao"),
+//     new Passaro("calopsita")
+// };
+
+// foreach (var animal in animais)
+// {
+// Console.WriteLine($"Nome do Animal: {animal.GetType().Name}");
+// Console.WriteLine($"Canto: {animal.ExibirSom()}");
+// Console.WriteLine("===========================");
+// }
+
+// ? Exercicio 9
+
+IArmazenavel txt = new ArquivoTexto();
+// txt.Salvar("oiii");
+// Console.WriteLine("------------");
+// txt.Ler();
+
+// Console.WriteLine("============");
+
+// IArmazenavel sql = new BancoDados();
+// sql.Salvar("ID: 201, PRODUTO: carro");
+// Console.WriteLine("----------");
+// sql.Ler();
+
+// ? exercicio 10
+
+Servico servico = new Servico("cloud");
+
+IContratavel servicoContratavel = new Consultoria();
+
+servicoContratavel.Contratar();
