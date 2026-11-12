@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace AtividadePOOHeranca
 {
-    public class Hospedagem : IContratavel, ICancelavel
+    public class Hospedagem : Servico, IContratavel, ICancelavel
     {
+        public Hospedagem(string nome) : base(nome)
+        {
+        }
+
         public void Cancelar()
         {
-            Console.WriteLine("contrato cancelado");
+            Console.WriteLine($"Serviço de Hospedagem '{Nome}' cancelado. Estorno em processamento.");
         }
 
         public void Contratar()
         {
-            Console.WriteLine("Contratado com sucesso");
+            Console.WriteLine($"Serviço de Hospedagem '{Nome}' contratado com sucesso! Reserva confirmada.");
         }
     }
 }

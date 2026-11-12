@@ -5,11 +5,15 @@ using System.Threading.Tasks;
 
 namespace AtividadePOOHeranca
 {
-    public class Consultoria : IContratavel
+    public class Consultoria : Servico, IContratavel
     {
+        public Consultoria(string nome) : base(nome)
+        {
+        }
+
         public void Contratar()
         {
-            Console.WriteLine("Contratado com sucesso");
+            Console.WriteLine($"Serviço de Consultoria '{Nome}' contratado! Reunião inicial agendada.");
         }
     }
 }

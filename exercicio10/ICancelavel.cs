@@ -7,6 +7,6 @@ namespace AtividadePOOHeranca
 {
     public interface ICancelavel
     {
-        public void Cancelar();
+        void Cancelar();
     }
 }

@@ -241,8 +241,12 @@ IArmazenavel txt = new ArquivoTexto();
 
 // ? exercicio 10
 
-Servico servico = new Servico("cloud");
-
-IContratavel servicoContratavel = new Consultoria();
-
+IContratavel servicoContratavel = new Hospedagem("Site da apple");
 servicoContratavel.Contratar();
+
+servicoContratavel = new Consultoria("Consultor da apple");
+servicoContratavel.Contratar();
+
+ICancelavel servicoCancelavel = new Hospedagem("site do gov");
+servicoCancelavel.Cancelar();
+

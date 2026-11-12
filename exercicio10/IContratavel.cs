@@ -7,6 +7,6 @@ namespace AtividadePOOHeranca
 {
     public interface IContratavel
     {
-        public void Contratar();
+        void Contratar();
     }
 }
